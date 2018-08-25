@@ -52,7 +52,7 @@ public class Main extends Application {
         // loading tmx and expanding it into various java structures
         // it also loads the tile map images
         try {
-            map = mapReader.readMap("C:\\Users\\op3er\\Documents\\Realms\\src\\com\\Realms\\sewers\\sewers.tmx");
+            map = mapReader.readMap("C:\\Users\\Alex\\Documents\\GitHub\\Realms\\src\\com\\Realms\\sewers\\sewers.tmx");
         } catch (Exception e) {
             e.printStackTrace();
         }
