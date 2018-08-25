@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="libtiled-1.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/tiled/tiled-master/util/java/libtiled-java/target/libtiled-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libtiled-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
