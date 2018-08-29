@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_01.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_01.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Client/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -313,7 +296,7 @@
       <workItem from="1535508018171" duration="1933000" />
       <workItem from="1535513817995" duration="5907000" />
       <workItem from="1535574107109" duration="1697000" />
-      <workItem from="1535577543689" duration="6020000" />
+      <workItem from="1535577543689" duration="6092000" />
     </task>
     <task id="LOCAL-00001" summary="Have some test code running to ensure Tiled works">
       <created>1535215511114</created>
@@ -326,7 +309,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23588000" />
+    <option name="totallyTimeSpent" value="23660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
@@ -342,7 +325,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2231405" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2231405" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
