@@ -1,5 +1,6 @@
 package com.Realms.Client;
 
+import com.Realms.Game.Game;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -78,6 +79,7 @@ public class Client extends Application {
                                 switch (event.getButton()){
                                     case PRIMARY:
                                         primaryStage.close();
+                                        new Game();
                                 }
                             }
                         });
