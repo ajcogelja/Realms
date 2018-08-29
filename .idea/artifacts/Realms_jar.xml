@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Realms:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Realms_jar</output-path>
+    <root id="archive" name="Realms.jar">
+      <element id="module-output" name="Realms" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libtiled-1.0-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

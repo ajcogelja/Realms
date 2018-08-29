@@ -2,23 +2,21 @@ package com.Realms.Client;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.*;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Collection;
 
 public class Client extends Application {
 
@@ -29,7 +27,9 @@ public class Client extends Application {
     //Pane and components
     Pane pane;
     TextField usernameEntry;
-    Client client;
+    String musicFile = "Res/Music/Catacombs.mp3";
+    Media sound = new Media(new File(musicFile).toURI().toString());
+    MediaPlayer mp = new MediaPlayer(sound);
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -104,6 +104,7 @@ public class Client extends Application {
         primaryStage.show();
         clickRegister.start();
         flicker.start();
+        mp.play();
 
     }
 
