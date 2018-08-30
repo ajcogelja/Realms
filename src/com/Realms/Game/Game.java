@@ -11,18 +11,32 @@ import org.mapeditor.view.IsometricRenderer;
 import org.mapeditor.view.MapRenderer;
 import org.mapeditor.view.OrthogonalRenderer;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 import static java.awt.event.KeyEvent.*;
 
 public class Game {
     Map map;
     private boolean up, down, left, right = false;
-    float move = 0.2f;
+    int move = 2;
+    Player player;
+    Image[] sprites = new Image[3];
 
     public Game() {
+        try {
+            sprites[0] = ImageIO.read(new FileInputStream("src\\com\\Realms\\Game\\PlayerTest" + "1.png"));
+            sprites[1] = ImageIO.read(new FileInputStream("src\\com\\Realms\\Game\\PlayerTest" + "2.png"));
+            sprites[2] = ImageIO.read(new FileInputStream("src\\com\\Realms\\Game\\PlayerTest" + "3.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        player = new Player("Player", sprites, 100, 100);
         try {
             TMXMapReader reader = new TMXMapReader();
             //System.out.println(new File(loc + "realms_dungeon_crypt.tmx").toPath().toString() + '\n' + "Does the file exist: " + new File("com.Realms.Game/realms_dungeon_crypt.tmx").exists());
@@ -39,7 +53,7 @@ public class Game {
         window.setFocusable(true);
         panel.add(canvas);
         window.add(panel);
-        window.setSize(2000, 1700);
+        window.setSize(1000, 700);
         window.setVisible(true);
         canvas.addKeyListener(new KeyListener() {
             @Override
@@ -101,6 +115,7 @@ public class Game {
             @Override
             public void run() {
                 while(true) {
+                        player.repaint();
                         if (up) {
                             canvas.setLocation(canvas.getX(), canvas.getY() + 2);
                         }
@@ -113,7 +128,15 @@ public class Game {
                         if (right) {
                             canvas.setLocation(canvas.getX() - 2, canvas.getY());
                         }
-                        canvas.repaint();
+                        //canvas.repaint();
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                        panel.repaint();
+                        player.getFrame();
+                        player.repaint();
                 }
             }
         };
@@ -151,9 +174,8 @@ public class Game {
         public void paint(Graphics g) {
             final Graphics2D g2 = (Graphics2D) g.create();
             final Rectangle clip = g2.getClipBounds();
-
+            g2.scale(.62, .6);
             g2.fill(clip);
-
             for (MapLayer mapLayer : map.getLayers()) {
                 if (mapLayer instanceof TileLayer) {
                     mp.paintTileLayer(g2, (TileLayer) mapLayer);
@@ -161,6 +183,7 @@ public class Game {
                     mp.paintObjectGroup(g2, (ObjectGroup) mapLayer);
                 }
             }
+            g2.drawImage(player.getSprites()[player.getFrame()], 100, 100, null);
         }
 
         @Override
