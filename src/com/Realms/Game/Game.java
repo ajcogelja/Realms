@@ -157,7 +157,7 @@ public class Game{
                 player.moveX((dx * delta * .003f));
                 player.moveY((dy * delta * .003f));
                 for (MapLayer ml:map.getLayers()) {
-                    
+
                 }
             }
     }

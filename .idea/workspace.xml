@@ -6,18 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +40,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+                  <caret line="159" selection-start-line="159" selection-end-line="159" />
                   <folding>
                     <element signature="e#3718#4603#0" expanded="true" />
                     <element signature="e#4602#4603#0" expanded="true" />
@@ -322,7 +311,7 @@
       <workItem from="1535604272902" duration="3791000" />
       <workItem from="1535771676300" duration="6960000" />
       <workItem from="1535824895864" duration="664000" />
-      <workItem from="1536260972463" duration="7097000" />
+      <workItem from="1536260972463" duration="7131000" />
     </task>
     <task id="LOCAL-00001" summary="Have some test code running to ensure Tiled works">
       <created>1535215511114</created>
@@ -335,11 +324,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48789000" />
+    <option name="totallyTimeSpent" value="48823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,7 +339,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22210415" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22210415" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -673,7 +661,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="e#3718#4603#0" expanded="true" />
             <element signature="e#4602#4603#0" expanded="true" />
