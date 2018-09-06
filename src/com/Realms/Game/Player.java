@@ -7,7 +7,7 @@ public class Player extends Entity {
     public static int frame = 0;
     public final int framesLength;
 
-    public Player(String name, BufferedImage[] sprites, int x, int y) {
+    public Player(String name, BufferedImage[] sprites, float x, float y) {
         super(name, sprites, x, y);
         framesLength = sprites.length;
     }
@@ -17,10 +17,10 @@ public class Player extends Entity {
         return super.getSprites();
     }
 
-    public void moveX(int delta){
+    public void moveX(float delta){
         this.x += delta;
     }
-    public void moveY(int delta){
+    public void moveY(float delta){
         this.y += delta;
     }
 

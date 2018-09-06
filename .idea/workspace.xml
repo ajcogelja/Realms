@@ -9,20 +9,14 @@
     <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/PlayerTest2.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/PlayerTest2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/PlayerTest3.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/PlayerTest3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/PlayerTest2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/PlayerTest2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/PlayerTest3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/PlayerTest3.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +32,7 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43829787">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
@@ -53,20 +47,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+                <state relative-caret-position="272">
+                  <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#3718#4603#0" expanded="true" />
+                    <element signature="e#4602#4603#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Entity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -78,7 +76,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
-                  <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+                  <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -89,15 +87,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
+        <leaf>
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
                   <folding>
-                    <element signature="e#4422#6243#0" expanded="true" />
-                    <element signature="e#6242#6243#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -128,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/com/Realms/Client/Main.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/Realms/Client/Client.java" />
-        <option value="$PROJECT_DIR$/src/com/Realms/Game/Player.java" />
         <option value="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" />
+        <option value="$PROJECT_DIR$/src/com/Realms/Game/Player.java" />
         <option value="$PROJECT_DIR$/src/com/Realms/Game/Game.java" />
       </list>
     </option>
@@ -143,9 +140,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2703" />
-    <option name="y" value="-19" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2873" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -326,7 +322,7 @@
       <workItem from="1535604272902" duration="3791000" />
       <workItem from="1535771676300" duration="6960000" />
       <workItem from="1535824895864" duration="664000" />
-      <workItem from="1536260972463" duration="505000" />
+      <workItem from="1536260972463" duration="7097000" />
     </task>
     <task id="LOCAL-00001" summary="Have some test code running to ensure Tiled works">
       <created>1535215511114</created>
@@ -339,7 +335,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42351000" />
+    <option name="totallyTimeSpent" value="48789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -359,7 +355,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15729167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.063541666" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -422,8 +418,8 @@
         <state relative-caret-position="663">
           <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding>
-            <element signature="e#4422#6243#0" expanded="true" />
-            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#3718#4603#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,26 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libtiled-1.0-SNAPSHOT.jar!/org/mapeditor/core/VerticalAlignment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -674,13 +650,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
           <folding>
-            <element signature="e#4422#6243#0" expanded="true" />
-            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#3718#4603#0" expanded="true" />
+            <element signature="e#4602#4603#0" expanded="true" />
           </folding>
         </state>
       </provider>
