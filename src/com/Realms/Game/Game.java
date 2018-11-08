@@ -28,6 +28,7 @@ public class Game{
     int xOffset, yOffset = 0;
 
     public Game()  {
+        System.setProperty("sun.java2d.opengl", "true");
         try {
             sprites[0] = ImageIO.read(new FileInputStream("src\\com\\Realms\\Game\\PlayerTest" + "1.png"));
             sprites[1] = ImageIO.read(new FileInputStream("src\\com\\Realms\\Game\\PlayerTest" + "2.png"));
@@ -35,7 +36,7 @@ public class Game{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        player = new Player("Player", sprites, 100, 100);
+        player = new Player("Player", sprites, 300, 300);
         try {
             TMXMapReader reader = new TMXMapReader();
             //System.out.println(new File(loc + "realms_dungeon_crypt.tmx").toPath().toString() + '\n' + "Does the file exist: " + new File("com.Realms.Game/realms_dungeon_crypt.tmx").exists());
@@ -45,10 +46,20 @@ public class Game{
             System.out.println("Map failed to load");
         }
         //System.out.println(map.getFilename());
-        JPanel panel = new MapView(map);
+        JPanel panel = new MapView(map, player);
+        JPanel map = new JPanel(new GridBagLayout());
+        map.setSize(1000, 700);
+        GridBagConstraints mapConstraints = new GridBagConstraints();
+        mapConstraints.ipady = 700;
+        mapConstraints.ipadx = 1000;
+        mapConstraints.gridx = 1;
+        mapConstraints.gridy = 1;
+        map.add(panel, mapConstraints);//, constraints.fill);
         JFrame window = new JFrame("Window");
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        window.add(panel);
+        window.add(map); //GOING TO TRY ADDING PLAYER WITH GRIDBAG VOODOO
+        //window.add(panel);
+        window.add(player);
         window.setSize(1000, 700);
         window.setVisible(true);
         window.addKeyListener(new KeyListener() {
@@ -141,34 +152,44 @@ public class Game{
     public void movement(long delta){
             int dx = 0;
             int dy = 0;
-            if (left){
+            if (left && dx > -4){
                 dx -= 1;
             }
-            if (right){
+            if (right && dx < 4){
                 dx += 1;
             }
-            if (up){
+            if (up && dy > -4){
                 dy -= 1;
             }
-            if (down){
+            if (down && dx < 4){
                 dy += 1;
             }
             if (dx != 0 || dy != 0) {
-                player.moveX((dx * delta * .003f));
-                player.moveY((dy * delta * .003f));
-                for (MapLayer ml:map.getLayers()) {
-
+                for (MapLayer ml : map) {
+                    if (player.getX() > 700 || player.getX() < 300) {
+                        ml.translate(-(dx), -(dy));
+                        //System.out.println(player.getX() + " " + player.getY());
+                        //} else {
+                    } else { //this is wrong. This is how the map should shift
+                        //need to make an offset
+                        player.moveX((dx * delta * .18f));
+                        player.moveY((dy * delta * .18f));
+                    }
                 }
             }
+
+        }
     }
 
     class MapView extends JPanel{
         private final Map map;
         private MapRenderer mp;
+        Player player;
 
 
-        MapView(Map map) {
+        MapView(Map map, Player player) {
             this.map = map;
+            this.player = player;
             switch (map.getOrientation()) {
                 case ORTHOGONAL:
                     mp = new OrthogonalRenderer(map);
@@ -205,4 +226,3 @@ public class Game{
             //player.nextFrame();
         }
     }
-}

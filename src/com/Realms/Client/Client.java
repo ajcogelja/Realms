@@ -78,6 +78,8 @@ public class Client extends Application {
                             public void handle(MouseEvent event) {
                                 switch (event.getButton()){
                                     case PRIMARY:
+                                        mp.stop();
+                                        mp.dispose();
                                         primaryStage.close();
                                         new Game();
                                 }
@@ -106,7 +108,7 @@ public class Client extends Application {
         primaryStage.show();
         clickRegister.start();
         flicker.start();
-        mp.play();
+        //mp.play();
 
     }
 

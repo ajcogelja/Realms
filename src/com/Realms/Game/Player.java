@@ -48,4 +48,11 @@ public class Player extends Entity {
         frame = newFrame;
     }
 
+    public int getX(){
+        return (int)this.x;
+    }
+    public int getY(){
+        return (int)this.y;
+    }
+
 }

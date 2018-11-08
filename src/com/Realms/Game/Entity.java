@@ -8,8 +8,8 @@ public class Entity extends JPanel {
 
     public String name;
     public BufferedImage[] sprites;
-    public float x;
-    public float y;
+    public float x = 0;
+    public float y = 0;
     public int width;
     public int height;
     public int length;
@@ -30,7 +30,7 @@ public class Entity extends JPanel {
     public void paintComponent(Graphics g){
         Entity player = new Player(name, sprites, x, y);
         final Graphics2D g2 = (Graphics2D) g.create();
-        g2.drawImage(((Player) player).getCurrentFrame(),(int) x,(int) y, null);
+        //g2.drawImage(((Player) player).getCurrentFrame(),(int) x,(int) y, null);
     }
 
 }
