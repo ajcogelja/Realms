@@ -1,10 +1,7 @@
 package com.Realms.Game;
 
 import javafx.animation.AnimationTimer;
-import org.mapeditor.core.Map;
-import org.mapeditor.core.MapLayer;
-import org.mapeditor.core.ObjectGroup;
-import org.mapeditor.core.TileLayer;
+import org.mapeditor.core.*;
 import org.mapeditor.io.TMXMapReader;
 import org.mapeditor.view.HexagonalRenderer;
 import org.mapeditor.view.IsometricRenderer;
@@ -25,7 +22,7 @@ public class Game{
     private boolean up, down, left, right = false;
     Player player;
     BufferedImage[] sprites = new BufferedImage[3];
-    int xOffset, yOffset = 0;
+    float mapOffsetX, mapOffsetY = 0;
 
     public Game()  {
         System.setProperty("sun.java2d.opengl", "true");
@@ -164,18 +161,13 @@ public class Game{
             if (down && dx < 4){
                 dy += 1;
             }
+            int i = 0;
+            TileLayer collision = (TileLayer) map.getLayer(0);
+            Properties p = collision.getProperties();
             if (dx != 0 || dy != 0) {
-                for (MapLayer ml : map) {
-                    if (player.getX() > 700 || player.getX() < 300) {
-                        ml.translate(-(dx), -(dy));
-                        //System.out.println(player.getX() + " " + player.getY());
-                        //} else {
-                    } else { //this is wrong. This is how the map should shift
-                        //need to make an offset
-                        player.moveX((dx * delta * .18f));
-                        player.moveY((dy * delta * .18f));
-                    }
-                }
+                System.out.println(collisions.getName() + " " + i++);
+                player.moveX((dx * delta * .18f));
+                player.moveY((dy * delta * .18f));
             }
 
         }
