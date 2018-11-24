@@ -6,16 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="Trying to implement collision, im not sure if the object layer is set up in the tilemap yet">
+      <change afterPath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_02.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_test.tmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/realms_dungeon_crypt.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/realms_dungeon_crypt_dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/realms_dungeon_crypt_dark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/dungeon_crypt/realms_dungeon_crypt.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_01.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_dark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,31 +42,48 @@
     <session id="802450868">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="474" />
+          <entry key="java" value="1191" />
+          <entry key="tmx" value="2" />
+          <entry key="tsx" value="5" />
+          <entry key="txt" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="474" />
+          <entry key="JAVA" value="1191" />
+          <entry key="PLAIN_TEXT" value="96" />
+          <entry key="TypeScript JSX" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="2" />
+          <entry key="png" value="1" />
+          <entry key="tmx" value="7" />
+          <entry key="tsx" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="1" />
           <entry key="JAVA" value="2" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="TypeScript JSX" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -67,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+            <state relative-caret-position="473">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +105,47 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+            <state relative-caret-position="133">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7644#7645#0" expanded="true" />
+                <element signature="e#7669#7670#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_02.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-878">
+              <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_01.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_test.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6987" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -91,14 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -137,6 +193,11 @@
         <option value="$PROJECT_DIR$/src/com/Realms/Client/Client.java" />
         <option value="$PROJECT_DIR$/src/com/Realms/Game/Entity.java" />
         <option value="$PROJECT_DIR$/src/com/Realms/Game/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx" />
+        <option value="$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx" />
+        <option value="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_dark.tsx" />
+        <option value="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_01.tmx" />
+        <option value="$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_02.tmx" />
         <option value="$PROJECT_DIR$/src/com/Realms/Game/Game.java" />
       </list>
     </option>
@@ -147,8 +208,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1905" />
     <option name="width" value="1948" />
     <option name="height" value="2075" />
   </component>
@@ -177,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,6 +249,24 @@
             <path>
               <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Realms" type="462c0819:PsiDirectoryNode" />
+              <item name="Res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
+              <item name="Res" type="462c0819:PsiDirectoryNode" />
+              <item name="Maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
+              <item name="Res" type="462c0819:PsiDirectoryNode" />
+              <item name="Maps" type="462c0819:PsiDirectoryNode" />
+              <item name="dungeon_crypt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -196,6 +274,13 @@
               <item name="Realms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Realms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Realms" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Realms" type="b2602c69:ProjectViewProjectNode" />
@@ -208,11 +293,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543037604357" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/college/Semester 3/CS251/Projects/Project3_Skeleton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -224,17 +311,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\op3er\Documents\Realms\src\com\Realms\Game" />
-      <recent name="C:\Users\op3er\Documents\Realms\Res\Maps\dungeon_crypt" />
       <recent name="C:\Users\op3er\Documents\Realms\src\com\Realms\dungeon_crypt" />
+      <recent name="C:\Users\op3er\Documents\Realms\Res\Maps\dungeon_crypt" />
       <recent name="C:\Users\op3er\Documents\Realms\src\com\Realms" />
       <recent name="C:\Users\op3er\Documents\Realms\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\op3er\Documents\Realms\src\com\Realms\Game" />
       <recent name="C:\Users\Alex\Documents\GitHub\Realms\src\com\Realms\Game" />
       <recent name="C:\Users\op3er\Documents\Realms\Res\Maps\dungeon_crypt" />
       <recent name="C:\Users\op3er\Documents\Realms\Res\Music" />
       <recent name="C:\Users\op3er\Documents\Realms\Res\Sprites" />
-      <recent name="C:\Users\op3er\Documents\Realms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Game">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Realms.Client.Client" />
       <module name="Realms" />
@@ -257,6 +344,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.Realms.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Realms.Game.Game" />
+      <module name="Realms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Realms.Game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,9 +402,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Game" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Game" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
       </list>
@@ -338,6 +441,8 @@
       <workItem from="1540485710808" duration="482000" />
       <workItem from="1541701714182" duration="59000" />
       <workItem from="1543023691483" duration="4502000" />
+      <workItem from="1543032261150" duration="3669000" />
+      <workItem from="1543035966911" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="Have some test code running to ensure Tiled works">
       <created>1535215511114</created>
@@ -346,17 +451,24 @@
       <option name="project" value="LOCAL" />
       <updated>1535215511114</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trying to implement collision, im not sure if the object layer is set up in the tilemap yet">
+      <created>1543035290328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543035290328</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55198000" />
+    <option name="totallyTimeSpent" value="60503000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="779" height="830" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26074895" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13145539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,7 +477,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22317597" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28611898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985122" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,7 +486,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32577905" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32152975" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,7 +508,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Have some test code running to ensure Tiled works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have some test code running to ensure Tiled works" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/artifacts/Realms_jar/Realms.jar&#10;#&#9;out/production/Realms/com/Realms/Game/Game$MapView.class&#10;#&#9;out/production/Realms/com/Realms/Game/Game.class&#10;#&#9;out/production/Realms/com/Realms/Game/MapView$1.class&#10;#&#9;src/com/Realms/Game/Game.java" />
+    <MESSAGE value="Trying to implement collision, im not sure if the object layer is set up in the tilemap yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to implement collision, im not sure if the object layer is set up in the tilemap yet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/Realms/sewers/sewers.tmx">
@@ -406,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_01.tmx" />
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt.tmx" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/awt/windows/WComponentPeer.class" />
     <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/PlayerTest2.png">
       <provider selected="true" editor-type-id="images" />
@@ -440,26 +554,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
+    <entry file="file://$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark..tsx" />
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/dungeon_crypt/realms_dungeon_crypt_dark.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Maps/dungeon_crypt/realms_dungeon_crypt_dark.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -470,12 +583,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+        <state relative-caret-position="-6004" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_dark.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_dark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_test.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6987" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_01.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/realms_dungeon_crypt_02.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-878">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7644#7645#0" expanded="true" />
+            <element signature="e#7669#7670#0" expanded="true" />
           </folding>
         </state>
       </provider>

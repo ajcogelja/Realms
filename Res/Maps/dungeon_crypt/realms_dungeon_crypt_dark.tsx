@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+//<?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.2" tiledversion="1.2.0" name="realms_dungeon_crypt_dark" tilewidth="64" tileheight="64" tilecount="120" columns="20">
  <image source="realms_dungeon_crypt_dark.png" width="1280" height="384"/>
  <tile id="0" type="wall_nw">

@@ -1,9 +1,6 @@
 package com.Realms.Game;
 
-import org.mapeditor.core.Map;
-import org.mapeditor.core.MapLayer;
-import org.mapeditor.core.ObjectGroup;
-import org.mapeditor.core.TileLayer;
+import org.mapeditor.core.*;
 import org.mapeditor.io.TMXMapReader;
 import org.mapeditor.view.HexagonalRenderer;
 import org.mapeditor.view.IsometricRenderer;
@@ -14,10 +11,10 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 
 public class Game{
 
@@ -27,6 +24,7 @@ public class Game{
     Player player;
     BufferedImage[] sprites = new BufferedImage[3];
     int xOffset, yOffset = 0;
+    ObjectGroup group = null;
 
     public Game()  {
         try {
@@ -40,12 +38,17 @@ public class Game{
         try {
             TMXMapReader reader = new TMXMapReader();
             //System.out.println(new File(loc + "realms_dungeon_crypt.tmx").toPath().toString() + '\n' + "Does the file exist: " + new File("com.Realms.Game/realms_dungeon_crypt.tmx").exists());
-            map = reader.readMap("src\\com\\Realms\\Game\\realms_dungeon_crypt.tmx");
+            map = reader.readMap("src\\com\\Realms\\Game\\realms_dungeon_crypt_02.tmx");
+            //map = reader.readMap("C:\\Users\\op3er\\Documents\\Realms\\src\\com\\Realms\\Game\\realms_dungeon_crypt.tmx");
             System.out.println("Map Loaded");
         } catch (Exception e) {
             System.out.println("Map failed to load");
+            System.exit(0);
         }
         //System.out.println(map.getFilename());
+        group = new ObjectGroup(map);
+        System.out.println(map.getLayerCount() + " layers");
+        System.out.println("This map contains " + group.getObjects().size() + " objects");
         JPanel panel = new MapView(map);
         JFrame window = new JFrame("Window");
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -157,8 +160,21 @@ public class Game{
             if (down){
                 dy += 1;
             }
-                player.moveX(delta * dx * scale);
-                player.moveY(delta * dy * scale);
+
+            boolean collided = false;
+        Rectangle2D rect = new Rectangle();
+        rect.setRect(player.getX() + (delta * dx * scale), player.getY() + (delta * dy * scale), player.width, player.height);
+        for (MapObject obj:group.getObjects()) {
+            System.out.println(obj.getName());
+            if (obj.getShape().intersects(rect)){
+                collided = true;
+            }
+
+        }
+        if (!collided) {
+            player.moveX(delta * dx * scale);
+            player.moveY(delta * dy * scale);
+        }
     }
 
     class MapView extends JPanel{
@@ -203,5 +219,9 @@ public class Game{
             g2.drawImage(player.getCurrentFrame(), player.getX(), player.getY(), null);
             //player.nextFrame();
         }
+    }
+
+    public static void main(String[] args) {
+        new Game();
     }
 }
