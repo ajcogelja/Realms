@@ -11,7 +11,6 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,11 +33,11 @@ public class Game{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        player = new Player("Player", sprites, 100, 100);
+        player = new Player("Player", sprites, 0, 0);
         try {
             TMXMapReader reader = new TMXMapReader();
             //System.out.println(new File(loc + "realms_dungeon_crypt.tmx").toPath().toString() + '\n' + "Does the file exist: " + new File("com.Realms.Game/realms_dungeon_crypt.tmx").exists());
-            map = reader.readMap("src\\com\\Realms\\Game\\realms_dungeon_crypt_02.tmx");
+            map = reader.readMap("src\\com\\Realms\\Game\\realms_dungeon_crypt_test_02.tmx");
             //map = reader.readMap("C:\\Users\\op3er\\Documents\\Realms\\src\\com\\Realms\\Game\\realms_dungeon_crypt.tmx");
             System.out.println("Map Loaded");
         } catch (Exception e) {
@@ -46,7 +45,7 @@ public class Game{
             System.exit(0);
         }
         //System.out.println(map.getFilename());
-        group = new ObjectGroup(map);
+        group = (ObjectGroup) map.getLayer(1);
         System.out.println(map.getLayerCount() + " layers");
         System.out.println("This map contains " + group.getObjects().size() + " objects");
         JPanel panel = new MapView(map);
@@ -162,18 +161,20 @@ public class Game{
             }
 
             boolean collided = false;
-        Rectangle2D rect = new Rectangle();
-        rect.setRect(player.getX() + (delta * dx * scale), player.getY() + (delta * dy * scale), player.width, player.height);
+        Rectangle rect = player.getBounds();
+        rect.setRect(player.getX() + (dx * delta), player.getY() + (dy*delta), player.width, player.height);
         for (MapObject obj:group.getObjects()) {
-            System.out.println(obj.getName());
             if (obj.getShape().intersects(rect)){
+                System.out.println("Collided with " + obj.getName());
                 collided = true;
+                break;
             }
 
         }
         if (!collided) {
-            player.moveX(delta * dx * scale);
-            player.moveY(delta * dy * scale);
+            //System.out.println("Did not collide");
+            player.moveX(delta * dx);
+            player.moveY(delta * dy);
         }
     }
 
@@ -205,7 +206,7 @@ public class Game{
         public void paintComponent(Graphics g) {
             final Graphics2D g2 = (Graphics2D) g.create();
             final Rectangle clip = g2.getClipBounds();
-            g2.scale(1, 1);
+            //g2.scale(1, 1);
             g2.fill(clip);
             for (MapLayer mapLayer : map.getLayers()) {
                 if (mapLayer instanceof TileLayer) {
@@ -215,7 +216,7 @@ public class Game{
                     mp.paintObjectGroup(g2, (ObjectGroup) mapLayer);
                 }
             }
-            g2.scale(1.7, 1.7);
+            //g2.scale(1.7, 1.7);
             g2.drawImage(player.getCurrentFrame(), player.getX(), player.getY(), null);
             //player.nextFrame();
         }
