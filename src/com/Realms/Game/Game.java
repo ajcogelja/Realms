@@ -1,6 +1,5 @@
 package com.Realms.Game;
 
-import javafx.animation.AnimationTimer;
 import org.mapeditor.core.Map;
 import org.mapeditor.core.MapLayer;
 import org.mapeditor.core.ObjectGroup;
@@ -21,6 +20,8 @@ import java.io.IOException;
 
 
 public class Game{
+
+    Dimension display = Toolkit.getDefaultToolkit().getScreenSize();
     Map map;
     private boolean up, down, left, right = false;
     Player player;
@@ -49,7 +50,9 @@ public class Game{
         JFrame window = new JFrame("Window");
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.add(panel);
-        window.setSize(1000, 700);
+        window.setSize(3*display.height/4, 3*display.height/4);
+        window.setLocationRelativeTo(null);
+        //window.setLocation(display.width/6, display.height/6);
         window.setVisible(true);
         window.addKeyListener(new KeyListener() {
             @Override
@@ -139,6 +142,7 @@ public class Game{
     }
 
     public void movement(long delta){
+        float scale = .55f;
             int dx = 0;
             int dy = 0;
             if (left){
@@ -153,13 +157,8 @@ public class Game{
             if (down){
                 dy += 1;
             }
-            if (dx != 0 || dy != 0) {
-                player.moveX((dx * delta * .003f));
-                player.moveY((dy * delta * .003f));
-                for (MapLayer ml:map.getLayers()) {
-
-                }
-            }
+                player.moveX(delta * dx * scale);
+                player.moveY(delta * dy * scale);
     }
 
     class MapView extends JPanel{
@@ -190,7 +189,7 @@ public class Game{
         public void paintComponent(Graphics g) {
             final Graphics2D g2 = (Graphics2D) g.create();
             final Rectangle clip = g2.getClipBounds();
-            g2.scale(.62, .6);
+            g2.scale(1, 1);
             g2.fill(clip);
             for (MapLayer mapLayer : map.getLayers()) {
                 if (mapLayer instanceof TileLayer) {

@@ -17,6 +17,13 @@ public class Player extends Entity {
         return super.getSprites();
     }
 
+    public int getX(){
+        return (int) this.x;
+    }
+    public int getY(){
+        return (int) this.y;
+    }
+
     public void moveX(float delta){
         this.x += delta;
     }
