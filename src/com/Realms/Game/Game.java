@@ -22,8 +22,9 @@ public class Game{
     private boolean up, down, left, right = false;
     Player player;
     BufferedImage[] sprites = new BufferedImage[3];
-    int xOffset, yOffset = 0;
+    float xOffset, yOffset = 0f;
     ObjectGroup group = null;
+    JFrame window;
 
     public Game()  {
         try {
@@ -33,7 +34,7 @@ public class Game{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        player = new Player("Player", sprites, 0, 0);
+        player = new Player("Player", sprites, 600, 600);
         try {
             TMXMapReader reader = new TMXMapReader();
             //System.out.println(new File(loc + "realms_dungeon_crypt.tmx").toPath().toString() + '\n' + "Does the file exist: " + new File("com.Realms.Game/realms_dungeon_crypt.tmx").exists());
@@ -44,12 +45,10 @@ public class Game{
             System.out.println("Map failed to load");
             System.exit(0);
         }
-        //System.out.println(map.getFilename());
         group = (ObjectGroup) map.getLayer(1);
-        System.out.println(map.getLayerCount() + " layers");
         System.out.println("This map contains " + group.getObjects().size() + " objects");
         JPanel panel = new MapView(map);
-        JFrame window = new JFrame("Window");
+        window = new JFrame("Window"); //if breaks just remove declaration at the top and set up window here
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.add(panel);
         window.setSize(3*display.height/4, 3*display.height/4);
@@ -147,35 +146,59 @@ public class Game{
         float scale = .55f;
             int dx = 0;
             int dy = 0;
-            if (left){
+            if (left && dx > -3){
                 dx -= 1;
             }
-            if (right){
+            if (right && dx < 3){
                 dx += 1;
             }
-            if (up){
+            if (up && dy > -3){
                 dy -= 1;
             }
-            if (down){
+            if (down && dy < 3){
                 dy += 1;
             }
 
-            boolean collided = false;
-        Rectangle rect = player.getBounds();
-        rect.setRect(player.getX() + (dx * delta), player.getY() + (dy*delta), player.width, player.height);
-        for (MapObject obj:group.getObjects()) {
-            if (obj.getShape().intersects(rect)){
-                System.out.println("Collided with " + obj.getName());
-                collided = true;
-                break;
-            }
+            xOffset -= dx/14.0f;
+            yOffset -= dy/14.0f;
 
-        }
-        if (!collided) {
-            //System.out.println("Did not collide");
-            player.moveX(delta * dx);
-            player.moveY(delta * dy);
-        }
+            map.getLayer(0).setOffset((int)xOffset, (int)yOffset);
+
+            //this is commented out because Im going to try nestalgia style movement where only the map moves
+         /*if (player.getY() + (dy * delta) < window.getHeight() - 400
+                && player.getY() + (dy * delta) > 400
+                && player.getX() + (dx * delta) > 400
+                && player.getX() + (dx * delta) < window.getWidth() - 400) {
+
+                boolean collided = false;
+                Rectangle rect = player.getBounds();
+                rect.setRect(player.getX() + (dx * delta), player.getY() + (dy * delta), player.width, player.height);
+                for (MapObject obj : group.getObjects()) {
+                    if (obj.getShape().intersects(rect)) {
+                        System.out.println("Collided with " + obj.getName());
+                        collided = true;
+                        break;
+                    }
+
+                }
+                if (!collided) {
+                    System.out.println(player.getX() + " " + player.getY());
+                    //System.out.println(player.getX() + xOffset + " " + player.getY() + yOffset);
+                    //System.out.println("Did not collide");
+                        player.moveX((delta * dx));
+                        player.moveY((delta * dy));
+                }
+        } else { //moving the map is broken currently
+            for (MapLayer ml:map.getLayers()) {
+                System.out.println(ml.getOffsetX() + " " + ml.getOffsetY());
+                if (dx != 0) {
+                    ml.translate((int) (-dx / Math.abs(dx)), 0);
+                }
+                if (dy != 0){
+                    ml.translate(0, (int) (-dy / Math.abs(dy)));
+                }
+            }
+        } */
     }
 
     class MapView extends JPanel{
@@ -206,7 +229,6 @@ public class Game{
         public void paintComponent(Graphics g) {
             final Graphics2D g2 = (Graphics2D) g.create();
             final Rectangle clip = g2.getClipBounds();
-            //g2.scale(1, 1);
             g2.fill(clip);
             for (MapLayer mapLayer : map.getLayers()) {
                 if (mapLayer instanceof TileLayer) {
@@ -216,7 +238,6 @@ public class Game{
                     mp.paintObjectGroup(g2, (ObjectGroup) mapLayer);
                 }
             }
-            //g2.scale(1.7, 1.7);
             g2.drawImage(player.getCurrentFrame(), player.getX(), player.getY(), null);
             //player.nextFrame();
         }

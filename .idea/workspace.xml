@@ -6,14 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="Collision is up and running!">
+    <list default="true" id="56b6fbfe-9954-4428-af35-399652ed221b" name="Default" comment="removed code for testing functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Realms.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Realms.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Realms_jar/Realms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game$MapView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Realms/com/Realms/Game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Realms/Game/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,16 +36,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1405" />
+          <entry key="java" value="2865" />
           <entry key="tmx" value="2" />
           <entry key="tsx" value="5" />
-          <entry key="txt" value="205" />
+          <entry key="txt" value="246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1405" />
-          <entry key="PLAIN_TEXT" value="207" />
+          <entry key="JAVA" value="2865" />
+          <entry key="PLAIN_TEXT" value="248" />
           <entry key="TypeScript JSX" value="5" />
         </counts>
       </usages-collector>
@@ -80,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-377">
+            <state relative-caret-position="235">
               <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="224" column="5" selection-start-line="224" selection-start-column="5" selection-end-line="224" selection-end-column="5" />
+            <state relative-caret-position="116">
+              <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,9 +156,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
-    <option name="width" value="1948" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1905" />
+    <option name="width" value="1950" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -228,7 +222,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543039465492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543083542563" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/college/Semester 3/CS251/Projects/Project3_Skeleton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -371,7 +365,7 @@
       <workItem from="1541701714182" duration="59000" />
       <workItem from="1543023691483" duration="4502000" />
       <workItem from="1543032261150" duration="3669000" />
-      <workItem from="1543035966911" duration="3647000" />
+      <workItem from="1543035966911" duration="10094000" />
     </task>
     <task id="LOCAL-00001" summary="Have some test code running to ensure Tiled works">
       <created>1535215511114</created>
@@ -401,17 +395,24 @@
       <option name="project" value="LOCAL" />
       <updated>1543039115978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed code for testing functionality">
+      <created>1543039635766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543039635766</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62514000" />
+    <option name="totallyTimeSpent" value="68961000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="779" height="830" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27184466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13145539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -420,8 +421,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28898427" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985122" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28611898" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -455,7 +456,8 @@
     <MESSAGE value="Trying to implement collision, im not sure if the object layer is set up in the tilemap yet" />
     <MESSAGE value="Objects are rendered, however the engine is not detecting any exist. Curious" />
     <MESSAGE value="Collision is up and running!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collision is up and running!" />
+    <MESSAGE value="removed code for testing functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed code for testing functionality" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/Realms/sewers/sewers.tmx">
@@ -569,20 +571,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="224" column="5" selection-start-line="224" selection-start-column="5" selection-end-line="224" selection-end-column="5" />
+        <state relative-caret-position="235">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Realms/Client/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Realms/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-377">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="116">
+          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
